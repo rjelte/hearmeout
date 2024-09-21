@@ -34,6 +34,7 @@ export default function AccountForm({ user }: { user: User | null }) {
       }
     } catch (error) {
       alert('Error loading user data!')
+      console.log(error)
     } finally {
       setLoading(false)
     }
@@ -68,6 +69,7 @@ export default function AccountForm({ user }: { user: User | null }) {
       alert('Profile updated!')
     } catch (error) {
       alert('Error updating the data!')
+      console.log(error)
     } finally {
       setLoading(false)
     }
